@@ -3,14 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Raffaella Braga PhD - Therapy for Adults, Adolescents & Children</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/cropped-Favicon.png">
 </head>
 <body>
-    <div class="container">
-        <h1>Coming Soon</h1>
-        <p>We're working on something amazing. Stay tuned!</p>
-    </div>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">Raffaella Braga PhD</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="has-submenu">
+                        <a href="#therapies">Therapies <span class="submenu-arrow">▼</span></a>
+                        <ul class="submenu">
+                            <li><a href="#adults">Psychotherapy for Adults</a></li>
+                            <li><a href="#children">Psychotherapy for Children</a></li>
+                            <li><a href="#adolescents">Psychotherapy for Adolescents</a></li>
+                            <li><a href="#parents">Support Groups for Parents</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#tuned-in-care">Tuned In Care</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Tuned In Care Banner -->
+        <div class="header-banner">
+            <div class="container">
+                <div class="banner-content">
+                    <div class="banner-text">
+                        <div class="banner-text-line">
+                            <span class="heart-icon">❤</span>
+                            <span class="banner-title">Coming Soon: "Tuned In Care"</span>
+                        </div>
+                        <div class="banner-text-line">
+                            <span>A place to find Early Childhood Caregivers</span>
+                        </div>
+                        <div class="banner-text-line">
+                            <span>Vetted by Licensed Professionals</span>
+                        </div>
+                    </div>
+                    <a href="#tuned-in-care" class="btn btn-primary">Sign Up For Updates & Learn More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="images/HomeGrown-Image-Fullv2-1568x1412.webp" alt="Individual therapy for adolescents">
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line-1">Psychotherapy</span>
+                    <span class="title-line-2">for</span>
+                    <span class="title-line-3">Adults, Adolescents & Children</span>
+                </h1>
+                <h2 class="hero-subtitle">Nurture Your Mind</h2>
+                <a href="#contact" class="btn btn-cta">Set Up Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Therapy Services Section -->
+    <section class="services" id="therapies">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Psychotherapy for Adults -->
+                <article class="service-card">
+                    <div class="service-icon">✦</div>
+                    <div class="service-content">
+                        <h3 class="service-title">Psychotherapy for Adults</h3>
+                        <p class="service-text">In my experience people tend to seek therapy after they have been suffering for a while. For this reason, I take their concerns very seriously, I want to clearly understand their problems and make them feel that I hear their sufferance as well as their hopes for a better future.</p>
+                        <a href="#adults" class="btn btn-link">Learn More <span class="arrow">→</span></a>
+                    </div>
+                </article>
+
+                <!-- Psychotherapy for Children -->
+                <article class="service-card">
+                    <div class="service-icon">✦</div>
+                    <div class="service-content">
+                        <h3 class="service-title">Psychotherapy for Children</h3>
+                        <p class="service-text">Children can experience stress from various sources, leading to anxiety, depression, and challenging behaviors. I help children understand their emotions, triggers, and coping mechanisms, enabling them to resolve internal conflicts and manage their behavior effectively.</p>
+                        <a href="#children" class="btn btn-link">Learn More <span class="arrow">→</span></a>
+                    </div>
+                </article>
+
+                <!-- Psychotherapy for Adolescents -->
+                <article class="service-card">
+                    <div class="service-icon">✦</div>
+                    <div class="service-content">
+                        <h3 class="service-title">Psychotherapy for Adolescents</h3>
+                        <p class="service-text">Adolescence, with its many physical, hormonal, cognitive, and emotional changes, can increase vulnerability to psychological distress. In therapy, I aim to understand current difficulties, identify their root causes, and guide adolescents towards improved well-being.</p>
+                        <a href="#adolescents" class="btn btn-link">Learn More <span class="arrow">→</span></a>
+                    </div>
+                </article>
+
+                <!-- Support Groups for Parents -->
+                <article class="service-card">
+                    <div class="service-icon">✦</div>
+                    <div class="service-content">
+                        <h3 class="service-title">Support Groups for Parents</h3>
+                        <p class="service-text">I facilitate weekly support groups for expecting parents and parents of children up to around 10 years old. These one-hour sessions provide a safe space to discuss parenting challenges, share experiences, and learn from one another.</p>
+                        <a href="#parents" class="btn btn-link">Learn More <span class="arrow">→</span></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Areas of Interest -->
+    <section class="areas-of-interest">
+        <div class="container">
+            <h2>Main Areas of Interest</h2>
+            <ul class="interest-list">
+                <li>Cross cultural adjustment</li>
+                <li>Life transitions (adulthood, parenthood etc)</li>
+                <li>Anxiety</li>
+                <li>Depression</li>
+                <li>Relationships difficulties</li>
+                <li>Divorce</li>
+                <li>Parenting</li>
+                <li>School issues (academic and peers-related difficulties)</li>
+                <li>High Functioning Autism in Children and Adolescents</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Tell Me About Your Situation <span class="arrow">→</span></a>
+        </div>
+    </section>
+
+    <!-- Tuned In Care Section -->
+    <section class="tuned-in-care" id="tuned-in-care">
+        <div class="container">
+            <h2>Coming Soon: "Tuned In Care"</h2>
+            <p>A place to find Early Childhood Caregivers</p>
+            <p class="subtitle">Vetted by Licensed Professionals</p>
+            
+            <!-- Netlify Form -->
+            <form name="tuned-in-care" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="netlify-form">
+                <input type="hidden" name="form-name" value="tuned-in-care">
+                <p class="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign up for Updates & Learn More</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><a href="tel:2154947816">215-494-7816</a></p>
+                <p><a href="mailto:Raffaella@bragaphd.com">Raffaella@bragaphd.com</a></p>
+                <p><a href="https://www.google.com/maps/place/191+Presidential+Blvd+W10,+Bala+Cynwyd,+PA+19004" target="_blank" rel="noopener noreferrer">191 Presidential Boulevard Bala Cynwyd, PA 19004</a></p>
+            </div>
+            
+            <!-- Netlify Contact Form -->
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="netlify-form contact-form">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+                <div class="form-group">
+                    <label for="contact-name" class="form-label">Name</label>
+                    <input type="text" id="contact-name" name="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email" class="form-label">Email</label>
+                    <input type="email" id="contact-email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-phone" class="form-label">Phone</label>
+                    <input type="tel" id="contact-phone" name="phone" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="contact-message" class="form-label">Message</label>
+                    <textarea id="contact-message" name="message" class="form-textarea" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Set up Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-upper">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-contact">
+                        <p><span class="icon">📞</span> 215-494-7816</p>
+                        <p><span class="icon">✉</span> Raffaella@bragaphd.com</p>
+                        <p><span class="icon">📍</span> 191 Presidential Boulevard Bala Cynwyd, PA 19004</p>
+                    </div>
+                    <div class="footer-nav">
+                        <ul class="footer-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#therapies">Therapies</a></li>
+                            <li><a href="#tuned-in-care">Tuned In Care</a></li>
+                            <li><a href="#resources">Resources</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <a href="#top" class="back-to-top">Back To Top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="container">
+                <p>&copy; 2024 Raffaella Braga PhD</p>
+                <p class="designer-credit">WordPress Designer <a href="https://roxanneg.design/" target="_blank" rel="noopener noreferrer">RoxanneG.design</a>.</p>
+            </div>
+        </div>
+        <div class="footer-cta">
+            <div class="container">
+                <a href="#contact" class="btn btn-footer">Set Up Appointment</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
