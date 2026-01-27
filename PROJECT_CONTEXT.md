@@ -263,6 +263,10 @@ git push origin main
 # Netlify automatically deploys from main branch
 ```
 
+**Important Note for AI Assistants:**
+- When committing and pushing changes, use `required_permissions: ['all']` to ensure git operations work properly
+- Git push operations require authentication and full permissions to succeed
+
 ### Why This Strategy?
 
 - **Saves Netlify credits**: Only deploys once per week
@@ -402,4 +406,4 @@ Forms will automatically work once deployed to Netlify.
 
 ---
 
-*Last Updated: January 26, 2026*
+*Last Updated: January 27, 2026*
