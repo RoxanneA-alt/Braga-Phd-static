@@ -52,6 +52,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Prevent navigation on Therapies dropdown trigger
+    const submenuTriggers = document.querySelectorAll('.submenu-trigger');
+    submenuTriggers.forEach(trigger => {
+        trigger.addEventListener('click', function(e) {
+            e.preventDefault();
+        });
+    });
+
     // Form submission handling (Netlify will handle the actual submission)
     const forms = document.querySelectorAll('.netlify-form');
     forms.forEach(form => {
@@ -64,4 +72,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Update copyright year automatically
+    const copyrightYear = document.getElementById('copyright-year');
+    if (copyrightYear) {
+        copyrightYear.textContent = new Date().getFullYear();
+    }
 });
