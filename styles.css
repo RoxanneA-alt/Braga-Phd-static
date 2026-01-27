@@ -905,9 +905,6 @@ a:hover {
     line-height: var(--line-height-30);
     color: var(--color-black);
     margin: 0;
-    text-decoration: underline;
-    text-underline-offset: 0.25rem;
-    text-decoration-thickness: 1px;
 }
 
 .interest-list {
