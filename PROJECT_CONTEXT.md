@@ -406,4 +406,85 @@ Forms will automatically work once deployed to Netlify.
 
 ---
 
+## Methodology for Creating Individual Pages
+
+### Process for Building New Pages (e.g., "Psychotherapy for Adults")
+
+When creating new pages, follow this proven methodology:
+
+**1. Gather Screenshots:**
+   - **Screenshot 1**: Image names/file names (shows which images to use)
+   - **Screenshot 2**: Desktop view (full layout reference)
+   - **Screenshot 3**: Mobile view (responsive layout reference)
+
+**2. Find Images:**
+   - Search the `/images` folder for the image files mentioned in Screenshot 1
+   - Use the **highest resolution version** available (look for largest dimensions, e.g., `-2048x`, `-1568x`, `-1536x`)
+   - Prefer WebP format when available
+
+**3. Create HTML Structure:**
+   - Copy the header/navigation from `index.html` (remove banner for individual pages)
+   - Create page hero section with `.page-hero` class
+   - Add content sections using `.page-section` class
+   - Alternate backgrounds: use `.section-alt` for light blue sections
+   - Alternate image placement: use `.reverse` class on `.page-section-content` to swap image/text positions
+   - Add decorative elements (dots, lines) as needed
+   - Copy footer from `index.html`
+
+**4. CSS Styling:**
+   - Use existing `.page-hero`, `.page-section`, `.page-section-content` classes
+   - Use `.reverse` class with CSS `order` property to swap image/text positions:
+     ```css
+     .page-section-image { order: 2; }
+     .page-section-text { order: 1; }
+     .page-section-content.reverse .page-section-image { order: 1; }
+     .page-section-content.reverse .page-section-text { order: 2; }
+     ```
+   - Add section-specific styles if needed
+   - Ensure mobile responsiveness (sections stack vertically, text centers)
+
+**5. Key Patterns:**
+   - **Hero Section**: Title, quote (with pink vertical line), CTA button, image
+   - **Content Sections**: Alternate between image-left/text-right and text-left/image-right
+   - **Backgrounds**: Alternate between white (`page-section`) and light blue (`page-section section-alt`)
+   - **Decorative Dots**: Use `.section-dots` with orange/gold color for section headings
+   - **Buttons**: Use `.btn` and `.btn-primary` classes for CTAs
+
+**6. Testing:**
+   - Verify desktop layout matches screenshot exactly
+   - Verify mobile layout stacks properly and matches mobile screenshot
+   - Check image loading and alt text
+   - Test all links and navigation
+
+**Example Structure:**
+```html
+<section class="page-section section-alt">
+    <div class="container">
+        <div class="page-section-content reverse">
+            <div class="page-section-image">
+                <img src="images/image-name-2048x1816.webp" alt="Description">
+            </div>
+            <div class="page-section-text">
+                <div class="section-dots dots-orange">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+                <h2>Section Title</h2>
+                <p>Content text...</p>
+                <a href="contact.html" class="btn btn-primary">Button Text</a>
+            </div>
+        </div>
+    </div>
+</section>
+```
+
+**Success Indicators:**
+- ✅ Layout matches desktop screenshot exactly
+- ✅ Layout matches mobile screenshot exactly
+- ✅ Images are highest resolution available
+- ✅ Alternating image placement works correctly
+- ✅ Responsive design stacks properly on mobile
+- ✅ All styling matches design system
+
+---
+
 *Last Updated: January 27, 2026*
